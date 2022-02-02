@@ -50,10 +50,9 @@ blah, blah, blah, blah
 	    var result = document.getElementById("result")
 	    result.innerHTML = "Probability it is schizophrenia =" + schizoPercent + "%" + "<br> Probability it is bipolar disorder =" + bipolarPercent + "%"
 	}
-	/*
-	The functions above calculate the schizophrenia percent and bipolar percent based on the user's responses
-	The button on the last page of the app runs the function "percentage()", and on clicking the button it also changes the HTML content of the paragraph element with the id "result" to the innerHTML content (schizophrenia probability and bipolar probability) in the code above
-	*/
+	//The functions above calculate the schizophrenia percent and bipolar percent based on the user's responses
+	//The button on the last page of the app runs the function "percentage()", and on clicking the button it also changes the HTML content of the paragraph element with the id "result" to the innerHTML content (schizophrenia probability and bipolar probability) in the code above
+
 </script>
 
 	
@@ -84,9 +83,6 @@ blah, blah, blah, blah
 }	
 </style>
 
-/*
-I changed the HTML content below to make it specific to my diagnostic app, which calculates the bipolar disorder percent and schizophrenia percent of the user
-*/
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>Schizophrenia or Bipolar disorder?</h1>
@@ -113,7 +109,7 @@ I changed the HTML content below to make it specific to my diagnostic app, which
 		<a href="#two" onclick="bipolarAdd();" class="w3-btn w3-black">Yes</a>
 		<a href="#two" onclick="schizoAdd();" class="w3-btn w3-black">No</a>
     	</div>
-		/*
+		
 		On clicking the "Yes" or "No" button, the button moves to the app page with the id "two" 
 		On clicking the "Yes" or "No" button, the button runs the function "bipolarAdd()" or "schizoAdd()," adding one more count to either function depending on the button ("Yes" or "No") the user clicked
 		*/
@@ -129,11 +125,11 @@ I changed the HTML content below to make it specific to my diagnostic app, which
 		<a href="#three" onclick="schizoAdd();" class="w3-btn w3-black">Yes</a>
 		<a href="#three" onclick="bipolarAdd();" class="w3-btn w3-black">No</a>
 	</div>
-		/*
-		On clicking the "Yes" or "No" button, the button moves to the app page with the id "three" 
-		On clicking the "Yes" or "No" button, the button runs the function "bipolarAdd()" or "schizoAdd()," adding one more count to either function depending on the button ("Yes" or "No") the user clicked
-		*/
 </div>
+	<!--
+	On clicking the "Yes" or "No" button, the button moves to the app page with the id "three" 
+	On clicking the "Yes" or "No" button, the button runs the function "bipolarAdd()" or "schizoAdd()," adding one more count to either function depending on the button ("Yes" or "No") the user clicked
+	-->
 		
 <div class="page" id="three">
 	<div id="header" class="w3-container w3-flat-carrot">
@@ -144,12 +140,12 @@ I changed the HTML content below to make it specific to my diagnostic app, which
 		<p>Do you have mood swings?</p>
 		<a href="#four" onclick="bipolarAdd();" class="w3-btn w3-black">Yes</a>
 		<a href="#four" onclick="schizoAdd();" class="w3-btn w3-black">No</a>
-	</div>
-		/*
-		On clicking the "Yes" or "No" button, the button moves to the app page with the id "four" 
-		On clicking the "Yes" or "No" button, the button runs the function "bipolarAdd()" or "schizoAdd()," adding one more count to either function depending on the button ("Yes" or "No") the user clicked
-		*/
+	</div>	
 </div>	
+	<!--
+	On clicking the "Yes" or "No" button, the button moves to the app page with the id "four" 
+	On clicking the "Yes" or "No" button, the button runs the function "bipolarAdd()" or "schizoAdd()," adding one more count to either function depending on the button ("Yes" or "No") the user clicked
+	-->
 	
 <div class="page" id="four">
 	<div id="header" class="w3-container w3-flat-carrot">
@@ -161,11 +157,11 @@ I changed the HTML content below to make it specific to my diagnostic app, which
 		<a href="#five" onclick="schizoAdd();" class="w3-btn w3-black">Yes</a>
 		<a href="#five" onclick="bipolarAdd();" class="w3-btn w3-black">No</a>
 	</div>
-		/*
-		On clicking the "Yes" or "No" button, the button moves to the app page with the id "five" 
-		On clicking the "Yes" or "No" button, the button runs the function "bipolarAdd()" or "schizoAdd()," adding one more count to either function depending on the button ("Yes" or "No") the user clicked
-		*/
 </div>	
+	<!--
+	On clicking the "Yes" or "No" button, the button moves to the app page with the id "five" 
+	On clicking the "Yes" or "No" button, the button runs the function "bipolarAdd()" or "schizoAdd()," adding one more count to either function depending on the button ("Yes" or "No") the user clicked
+	-->
 	
 <div class="page" id="five">
 	<div id="header" class="w3-container w3-flat-carrot">
@@ -176,11 +172,11 @@ I changed the HTML content below to make it specific to my diagnostic app, which
 		<button class="w3-button w3-black" onclick="percentage()">Calculate</button>
 		<p id="result"></p>
 	</div>
-		/*	
-		On clicking the button with the HTML content "Calculate", it runs the function "percentage()" in the script (<s>) tags, which calculates the schizophrenia percent and bipolar disorder percent
-		On clicking the button, the button also changes the element with the id "result" within the paragraph (<p>) tags to the innerHTML described in the script (<s>) tags above
-		*/
-</div>		
+</div>	
+	<!--	
+	On clicking the button with the HTML content "Calculate", it runs the function "percentage()" in the script (<s>) tags, which calculates the schizophrenia percent and bipolar disorder percent
+	On clicking the button, the button also changes the element with the id "result" within the paragraph (<p>) tags to the innerHTML described in the script (<s>) tags above
+	-->
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
