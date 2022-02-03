@@ -6,8 +6,8 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-Author 1
-Author 2
+Tim Riedel
+Anya Chatterjee
  
 Further Information:
 http://diystream.cns.utexas.edu/
@@ -17,12 +17,14 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+The purpose of this diagnostic app is to determine a user's probablity of having schizophrenia and bipolar disorder based on his or her responses to questions pertaining to specific symptoms of both mental illnesses.
  
 Known Issues:
-blah, blah, blah, blah
+The misdiagnnosis of schizophrenia and bipolar disorder is prevelant, so this diagnostic app differentiates the symptoms of both these mental illnesses and calculates the user's liklihood of having schiophrenia and bipolar disorder.
+However, the app only includes four questions related to schizophrenia and bipolar disorder symptoms, so it calculates an imprecise schizophrenia percentage and bipolar disorder percentage based on the user's responses. Thus, the app should include more symptom questions to produce probabilities with greater accuracy of the user having schizophrenia and bipolar disorder.
 -->
 
+	
    <head> 
       <title>Hello World</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,18 +33,23 @@ blah, blah, blah, blah
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
-
+	
 <script>
         var schizo_count = 0;
         var bipolar_count = 0;
-
+	//We have declared and initialized the variables "schizo_count" and "bipolar_count"
+	//When you call a variable by name ("schizo_count" or "bipolar_count"), it returns its value (0 at first)
+	//If a function is run ("schizoAdd()" or "bipolarAdd()"), the number inside the variable ("schizo_count" or "bipolar_count") within the function increases by one 
+	
         function schizoAdd(){
             schizo_count = schizo_count + 1;
         }
+	//Everytime the "schizoAdd()" function is run, it adds one to the "schizo_count" variable 
 
         function bipolarAdd(){
             bipolar_count = bipolar_count + 1;
         }
+	//Everytime the "bipolarAdd()" function is run, it adds one to the "bipolar_count" variable 
 	
 	function percentage(){
 	    schizoPercent = (schizo_count/4) * 100
@@ -83,6 +90,7 @@ blah, blah, blah, blah
 }	
 </style>
 
+	
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>Schizophrenia or Bipolar disorder?</h1>
@@ -99,6 +107,12 @@ blah, blah, blah, blah
 
 	<img src="https://media.istockphoto.com/vectors/metaphor-bipolar-disorder-mind-mental-double-face-split-personality-vector-id1294477039?k=20&m=1294477039&s=612x612&w=0&h=95-K-EoTPop8l3Yrs8gHK6dpadGH3r5JnhtfArznSwk=" alt="Mental Health">
 	
+	<!--
+	I edited the HTML content within the paragraph (<p>) tags above to make it specific to my diagnostic app's purpose 
+	I added an image to the first page of the app using the image (<img>) tag, the image is linked to my webpage 
+	The image tag has two attributes: "src" specifies the path to the image while "alt" specifies the alternate text for the image 
+	-->
+	
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
@@ -110,7 +124,8 @@ blah, blah, blah, blah
 		<a href="#two" onclick="schizoAdd();" class="w3-btn w3-black">No</a>
     	</div>
 </div>
-	<!--	
+	<!--
+ 	I created "Yes" or "No" buttons on this app page by adding "w3-btn" class, which adds button behavior to the HTML element "<a>"
 	On clicking the "Yes" or "No" button, the button moves to the app page with the id "two" 
 	On clicking the "Yes" or "No" button, the button runs the function "bipolarAdd()" or "schizoAdd()," adding one more count to either function depending on the button ("Yes" or "No") the user clicked
 	-->
@@ -127,6 +142,7 @@ blah, blah, blah, blah
 	</div>
 </div>
 	<!--
+	I created "Yes" or "No" buttons on this app page by adding "w3-btn" class, which adds button behavior to the HTML element "<a>"
 	On clicking the "Yes" or "No" button, the button moves to the app page with the id "three" 
 	On clicking the "Yes" or "No" button, the button runs the function "bipolarAdd()" or "schizoAdd()," adding one more count to either function depending on the button ("Yes" or "No") the user clicked
 	-->
@@ -143,6 +159,7 @@ blah, blah, blah, blah
 	</div>	
 </div>	
 	<!--
+	I created "Yes" or "No" buttons on this app page by adding "w3-btn" class, which adds button behavior to the HTML element "<a>"
 	On clicking the "Yes" or "No" button, the button moves to the app page with the id "four" 
 	On clicking the "Yes" or "No" button, the button runs the function "bipolarAdd()" or "schizoAdd()," adding one more count to either function depending on the button ("Yes" or "No") the user clicked
 	-->
@@ -159,6 +176,7 @@ blah, blah, blah, blah
 	</div>
 </div>	
 	<!--
+	I created "Yes" or "No" buttons on this app page by adding "w3-btn" class, which adds button behavior to the HTML element "<a>"
 	On clicking the "Yes" or "No" button, the button moves to the app page with the id "five" 
 	On clicking the "Yes" or "No" button, the button runs the function "bipolarAdd()" or "schizoAdd()," adding one more count to either function depending on the button ("Yes" or "No") the user clicked
 	-->
@@ -174,6 +192,7 @@ blah, blah, blah, blah
 	</div>
 </div>	
 	<!--	
+	I created the "Calculate" button by adding "w3-btn" class, which adds button behavior to the HTML element "<button>"
 	On clicking the button with the HTML content "Calculate", it runs the function "percentage()" in the script (<s>) tags, which calculates the schizophrenia percent and bipolar disorder percent
 	On clicking the button, the button also changes the element with the id "result" within the paragraph (<p>) tags to the innerHTML described in the script (<s>) tags above
 	-->
